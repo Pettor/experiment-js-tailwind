@@ -1,0 +1,51 @@
+.sb-doc {
+  padding: 2rem;
+  background-color: color(white);
+  min-height: 100%;
+
+  .intro & {
+    background-color: transparent;
+
+    > * {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  code {
+    font-size: 1rem;
+    border: solid 1px color(grey, light);
+    border-radius: .25em;
+    background-color: color(grey, subtle);
+  }
+
+  > * {
+    max-width: 50em;
+  }
+
+  > h1 {
+    font-size: 4em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  > h2 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: .5em;
+  }
+}
+
+[class^="sb-font-"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px grey;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+
+  &:last-child {
+    border-bottom: solid 1px grey;
+  }
+}

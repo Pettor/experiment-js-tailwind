@@ -1,0 +1,21 @@
+// base color defs
+$color-primary: #101010;
+$color-secondary: #999999;
+$color-shade-amount: 15%;
+$color-trans-amount: 0.5;
+
+// color variable map
+$colors: (
+  primary: (
+    base: $color-primary,
+    light: lighten($color-primary, $color-shade-amount),
+    dark: darken($color-primary, $color-shade-amount),
+    trans: transparentize($color-primary, $color-trans-amount)
+  ),
+  secondary: (
+    base: $color-secondary,
+    light: lighten($color-secondary, $color-shade-amount),
+    dark: darken($color-secondary, $color-shade-amount),
+    trans: transparentize($color-secondary, $color-trans-amount)
+  )
+);
